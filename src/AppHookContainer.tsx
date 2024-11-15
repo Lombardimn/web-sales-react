@@ -1,10 +1,11 @@
 import { AppRouter } from "@/AppRouter"
+import { ModalProvider } from "@/components"
 
 const AppHookContainer = () => {
   return (
-    <>
-      <AppRouter />
-    </>
+    <ModalProvider>
+        <AppRouter />
+    </ModalProvider>
   )
 }
 
