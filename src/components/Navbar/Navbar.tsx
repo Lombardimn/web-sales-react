@@ -14,6 +14,7 @@ const Navbar = () => {
       </div>
       <div className="content-btn">
         <Button 
+          type="button"
           label="Carrito de Compras" 
           className="btn-icon" 
           ParentMethod={() => handleOpenModal('modalCart')}

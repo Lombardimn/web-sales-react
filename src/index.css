@@ -2,21 +2,42 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  input {
+    @apply capitalize text-black
+  }
+}
+
+
+
 @layer components {
-  /* NAVBAR */
   .header {
     @apply px-6 font-medium shadow-lg bg-gray-800 text-white
   }
 
+  .main {
+    @apply px-6 bg-cyan-950 text-white
+  }
+
+  .footer {
+    @apply px-6 bg-gray-800 text-white
+  }
+
+
+  /* NAVBAR */
   .navbar {
     @apply h-16 flex justify-between items-center
   }
 
 
-  /* SECTION */
+  /* STRUCTURE */
 
   .fr-gap-2 {
     @apply flex gap-2 items-center
+  }
+
+  .fc-gap-2 {
+    @apply flex flex-col justify-center items-center gap-2
   }
 
   .content-btn {
