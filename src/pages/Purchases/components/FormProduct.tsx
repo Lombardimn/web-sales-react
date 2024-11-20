@@ -11,16 +11,24 @@ const FormProduct = () => {
         <input 
           type="text"
           id="productName"
-          {...register('formProduct.productName')}
-          />
+          {...register("formProduct.productName")}
+        />
       </div>
       <div>
         <label htmlFor="price">Precio</label>
-        <input type="number" id="price" {...register('formProduct.price')} />
+        <input 
+          type="number" 
+          id="price"
+          {...register("formProduct.price")}
+        />
       </div>
       <div>
         <label htmlFor="quantity">Cantidad</label>
-        <input type="number" id="quantity" {...register('formProduct.quantity')} />
+        <input 
+          type="number" 
+          id="quantity"
+          {...register("formProduct.quantity")}
+        />
       </div>
     </div>
   )

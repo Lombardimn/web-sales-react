@@ -1,4 +1,4 @@
-import { Button, Icon, Modal, useModalContext } from "@/components"
+import { Button, Icon, ListOfProducts, Modal, useModalContext } from "@/components"
 
 const Navbar = () => {
   const { setState } = useModalContext()
@@ -24,7 +24,10 @@ const Navbar = () => {
       </div>
 
       <Modal title="Carrito de Compras" id="modalCart" className="modal">
-        Modal con el carrito de productos
+        <ListOfProducts />
+        <Button type="button" label="Confirmar Compra" className="btn-primary mt-3">
+          Confirmar compra
+        </Button>
       </Modal>
     </nav>
   )
