@@ -9,7 +9,7 @@ interface FormUserProps {
 
 interface FormProductProps {
   productName: string
-  format: string
+  format: string[]
   price: number
   quantity: number
 }
@@ -29,7 +29,7 @@ const EmptyMainForm: MainFormProps = {
   },
   formProduct: {
     productName: "",
-    format: "",
+    format: [],
     price: 0,
     quantity: 0,
   },

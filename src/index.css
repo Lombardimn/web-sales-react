@@ -3,12 +3,10 @@
 @tailwind utilities;
 
 @layer base {
-  input {
-    @apply capitalize text-black
+  #root {
+    @apply grid min-h-screen grid-rows-[auto_1fr_auto]
   }
 }
-
-
 
 @layer components {
   .header {
@@ -20,7 +18,7 @@
   }
 
   .footer {
-    @apply px-6 bg-gray-800 text-white
+    @apply px-6 w-full bg-gray-800 text-white
   }
 
 
@@ -31,6 +29,10 @@
 
 
   /* STRUCTURE */
+
+  .fr-end {
+    @apply flex justify-end py-3
+  }
 
   .fr-gap-2 {
     @apply flex gap-2 items-center
@@ -47,7 +49,7 @@
   /* BUTTON */
 
   .btn-primary {
-    @apply py-2 px-5 bg-violet-500 text-white font-semibold rounded-full shadow-md hover:bg-violet-700 focus:outline-none focus:ring focus:ring-violet-400 focus:ring-opacity-75
+    @apply py-2 px-5 my-2 bg-violet-500 text-white font-semibold rounded-full shadow-md hover:bg-violet-700 focus:outline-none focus:ring focus:ring-violet-400 focus:ring-opacity-75
   }
 
   .btn-secondary {
@@ -63,6 +65,44 @@
 
   .modal {
     @apply absolute top-20 py-3 mx-2 z-50 w-screen bg-white rounded-lg border-2 border-transparent hover:border-2 hover:outline-0 hover:border-violet-500 hover:border-opacity-75 transition ease-in-out duration-300
+  }
+
+  /* FORMS */
+
+  .form-content {
+    @apply py-2 
+  }
+
+  .form-value {
+    @apply flex gap-2 py-2
+  }
+
+  .label {
+    @apply block text-lg mb-1 opacity-80
+  }
+
+  .radio-group {
+    @apply flex flex-col items-start
+  }
+
+  .radio-group-r {
+    @apply flex items-start gap-3
+  }
+
+  .radio {
+    @apply flex items-center gap-1
+  }
+
+  .input-text {
+    @apply block w-full p-1 text-base rounded-md font-medium bg-slate-200 text-gray-800 uppercase
+  }
+
+  .input-enabled {
+    @apply block w-full p-1 text-base rounded-md font-medium text-gray-800 bg-slate-200 disabled:opacity-75 outline outline-offset-2 outline-1 outline-slate-200 uppercase
+  }
+
+  .alert-form {
+    @apply text-red-400 text-sm
   }
 
 }

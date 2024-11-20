@@ -29,7 +29,7 @@ const PurchasesPages = () => {
 
   return (
     <AppLayout>
-      <h2 className="font-bold">Formulario de Compras</h2>
+      <h2 className="font-bold text-2xl pt-2 pb-3">Complete el formulario</h2>
 
       <FormProvider {...methods}>
         <form onSubmit={methods.handleSubmit(onSubmit)}>
@@ -40,7 +40,7 @@ const PurchasesPages = () => {
             label="Guardar datos del formulario" 
             className="btn-primary"
           >
-            Guardar
+            Agregar Producto
           </Button>
         </form>
       </FormProvider>

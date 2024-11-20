@@ -40,7 +40,8 @@ const Footer = () => {
             }
           </ul>
         </div>
-        <p>Copyright &copy; {new Date().getFullYear()} |<span className="font-bold">@lombardidev</span></p>
+        <p>Copyright &copy; {new Date().getFullYear()}</p>
+        <p>Desarrollado por <span className="font-bold">@lombardidev</span></p>
       </div>
     </>
   )
