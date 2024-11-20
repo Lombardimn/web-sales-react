@@ -35,13 +35,15 @@ const PurchasesPages = () => {
         <form onSubmit={methods.handleSubmit(onSubmit)}>
           <FormUser />
           <FormProduct />      
-          <Button 
-            type="submit" 
-            label="Guardar datos del formulario" 
-            className="btn-primary"
-          >
-            Agregar Producto
-          </Button>
+          <div className="fr-end">
+            <Button 
+              type="submit" 
+              label="Guardar datos del formulario" 
+              className="btn-primary"
+            >
+              Agregar Producto
+            </Button>
+          </div>
         </form>
       </FormProvider>
     </AppLayout>
