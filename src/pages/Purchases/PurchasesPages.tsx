@@ -9,7 +9,7 @@ const PurchasesPages = () => {
   const methods = useForm<MainFormProps>()
   const { setValue } = useGlobalContext()
 
-  const onSubmit: SubmitHandler<MainFormProps> = (data) => {
+  const onSubmit: SubmitHandler<MainFormProps> = (data) => {    
     setValue((prev) => ({
       ...prev,
       formUser: data.formUser, // Mantiene los datos del usuario

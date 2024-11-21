@@ -1,0 +1,5 @@
+// PARAMETROS DE GOOGLE SHEETS
+
+export const CREDENTIALS_GOOGLE = import.meta.env.VITE_CREDENTIALS_GOOGLE
+export const SPREAD_SHEET_ID = import.meta.env.VITE_SPREAD_SHEET_ID
+export const SCOPE_GOOGLE = import.meta.env.VITE_SCOPE_GOOGLE

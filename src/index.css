@@ -64,7 +64,7 @@
   /* MODAL */
 
   .modal {
-    @apply absolute top-20 py-3 mx-2 z-50 w-screen bg-white rounded-lg border-2 border-transparent hover:border-2 hover:outline-0 hover:border-violet-500 hover:border-opacity-75 transition ease-in-out duration-300
+    @apply absolute top-20 py-3 mx-2 z-50 w-full bg-white rounded-lg border-2 border-transparent hover:border-2 hover:outline-0 hover:border-violet-500 hover:border-opacity-75 transition ease-in-out duration-300
   }
 
   /* FORMS */
