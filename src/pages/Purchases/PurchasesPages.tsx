@@ -1,9 +1,9 @@
-import { AppLayout } from "@/AppLayout"
-import { Button } from "@/components"
+import { FormProvider, SubmitHandler, useForm } from "react-hook-form"
+import { FormProduct, FormUser } from "@/pages"
 import { useGlobalContext } from "@/context"
 import { MainFormProps } from "@/interfaces"
-import { FormProduct, FormUser } from "@/pages"
-import { FormProvider, SubmitHandler, useForm } from "react-hook-form"
+import { AppLayout } from "@/AppLayout"
+import { Button } from "@/components"
 
 const PurchasesPages = () => {
   const methods = useForm<MainFormProps>()

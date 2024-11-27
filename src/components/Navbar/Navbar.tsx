@@ -6,6 +6,10 @@ const Navbar = () => {
     setState(id)
   }
 
+  const handleConfirm = () => {
+    console.log( 'Productos del excel: ')
+  }
+
   return (
     <nav className="navbar">
       <div className="fr-gap-2">
@@ -25,7 +29,12 @@ const Navbar = () => {
 
       <Modal title="Carrito de Compras" id="modalCart" className="modal">
         <ListOfProducts />
-        <Button type="button" label="Confirmar Compra" className="btn-primary mt-3">
+        <Button 
+          type="button" 
+          label="Confirmar Compra" 
+          className="btn-primary mt-3"
+          ParentMethod={handleConfirm}
+        >
           Confirmar compra
         </Button>
       </Modal>
